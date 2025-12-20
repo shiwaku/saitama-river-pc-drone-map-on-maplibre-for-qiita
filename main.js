@@ -46,7 +46,7 @@ map.addControl(
   new maplibregl.AttributionControl({
     compact: true,
     customAttribution:
-      '<a href="https://twitter.com/shi__works" target="_blank">X(旧Twitter)</a> | <a href="https://github.com/shiwaku/saitama-river-pc-drone-map-on-maplibre" target="_blank">GitHub</a> | <a href="https://www.geospatial.jp/ckan/dataset/river-pointcloud-saitama" target="_blank">埼玉県 河川点群データを加工して作成</a> | <a href="https://sketchfab.com/3d-models/dji-tello-36365bad0ebd46428e6241676725dcec" target="_blank">Dji Tello</a> by <a href="https://sketchfab.com/Temooor" target="_blank">Temoor</a> licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>',
+      '<a href="https://twitter.com/shi__works" target="_blank">X(旧Twitter)</a> | <a href="https://github.com/shiwaku/saitama-river-pc-drone-map-on-maplibre-for-qiita" target="_blank">GitHub</a> | <a href="https://www.geospatial.jp/ckan/dataset/river-pointcloud-saitama" target="_blank">埼玉県 河川点群データを加工して作成</a> | <a href="https://sketchfab.com/3d-models/dji-tello-36365bad0ebd46428e6241676725dcec" target="_blank">Dji Tello</a> by <a href="https://sketchfab.com/Temooor" target="_blank">Temoor</a> licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>',
   })
 );
 

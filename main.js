@@ -70,7 +70,7 @@ const lightingEffect = new deck.LightingEffect({ ambientLight });
 // 3Dモデル
 const MODEL_URL = "assets/dji_tello_1.glb";
 
-let overlay, tile3dLayer1, tile3dLayer2;
+let overlay, tile3dLayer;
 
 // マップをロード
 map.on("load", () => {
@@ -89,8 +89,8 @@ map.on("load", () => {
   map.setTerrain({ source: "gsidem-terrain-rgb", exaggeration: 1 });
 
   // 点群3D Tiles
-  tile3dLayer2 = new deck.Tile3DLayer({
-    id: "tile3dlayer-2",
+  tile3dLayer = new deck.Tile3DLayer({
+    id: "tile3dlayer",
     pointSize: 1,
     data: "https://shiworks2.xsrv.jp/3dtiles/pref-saitama/river-pointcloud/chichibu-railway-spot/tileset.json",
     loader: Tiles3DLoader,
@@ -170,7 +170,7 @@ map.on("load", () => {
 
     overlay = new deck.MapboxOverlay({
       interleaved: true,
-      layers: [tile3dLayer1, tile3dLayer2, scenegraphLayer, textLayer],
+      layers: [tile3dLayer, scenegraphLayer, textLayer],
       effects: [lightingEffect],
     });
 
@@ -235,7 +235,7 @@ map.on("move", () => {
   });
 
   overlay.setProps({
-    layers: [tile3dLayer1, tile3dLayer2, newScenegraphLayer, newTextLayer],
+    layers: [tile3dLayer, newScenegraphLayer, newTextLayer],
   });
 });
 

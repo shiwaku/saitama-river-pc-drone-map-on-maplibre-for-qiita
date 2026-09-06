@@ -92,7 +92,7 @@ map.on("load", () => {
   tile3dLayer = new deck.Tile3DLayer({
     id: "tile3dlayer",
     pointSize: 1,
-    data: "https://shiworks2.xsrv.jp/3dtiles/pref-saitama/river-pointcloud/chichibu-railway-spot/tileset.json",
+    data: "https://shi-works.com/3dtiles/pref-saitama/river-pointcloud/chichibu-railway-spot/tileset.json",
     loader: Tiles3DLoader,
     onTileLoad: (d) => {
       const { content } = d;
